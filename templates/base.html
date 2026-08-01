@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about-me">ABOUT ME</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#stack">STACK</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+
+    <footer>
+        <p>Flamitsu | Licensed under MIT</p>
+    </footer>
+
+</body>
+</html>

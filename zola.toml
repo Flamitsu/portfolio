@@ -1,4 +1,5 @@
 # The URL the site will be built for
+title = "Flamitsu"
 base_url = "https://flamitsu.com"
 
 # Whether to automatically compile all Sass files in the sass directory
