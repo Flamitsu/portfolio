@@ -8,8 +8,7 @@
 </head>
 <body>
     <header class="static sm:sticky sm:top-0 z-50 flex flex-col sm:flex-row justify-between items-center px-6 py-4 gap-4">
-        <a href="/" class="font-bold text-xl tracking-wider">FLAMITSU</a>
-        
+        <a href="/" class="font-bold text-xl tracking-wider">FLAMITSU</a>        
         <nav class="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
             <a href="#about-me" class="hover:underline">ABOUT ME</a>
             <a href="#projects" class="hover:underline">PROJECTS</a>
@@ -17,7 +16,7 @@
             <a href="#contact" class="hover:underline">CONTACT</a>
         </nav>
     </header>
-    <main class="max-w-32 mx-auto px-6 py-8">
+    <main class="mx-auto px-6 py-8 bg-amber-500">
         {% block content %}
         {% endblock content %}
     </main>
@@ -38,6 +37,5 @@
             </svg>
         </a>
     </footer>
-
 </body>
 </html>

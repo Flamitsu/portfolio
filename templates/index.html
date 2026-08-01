@@ -2,5 +2,14 @@
 
 {% block title %}Flamitsu's portfolio{% endblock title %}
 {% block content %}
-
+<section id="about-me" class="bg-fuchsia-400 py-16 px-4">
+    <div class="container mx-auto max-w-4xl flex flex-col md:flex-row items-center gap-8">
+        <div class="about-me-pfp">
+            <img src="{{ get_url(path="img/pfp.webp") }}" alt="Flamitsu's profile picture">
+        </div>
+        <div class="about-me-text">
+            <p>hi</p>
+        </div>
+    </div>
+</section>
 {% endblock content %}
