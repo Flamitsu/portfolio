@@ -128,7 +128,6 @@ p {
   color: #9E948F !important;
 }
 
-/* MEDIAS DE PROYECTOS (CONTENEDORES Y ALTURA UNIFORME) */
 .project-media {
   background-color: rgba(24, 22, 22, 0.6);
   height: 150px;
@@ -154,7 +153,6 @@ p {
   color: #D9411E;
 }
 
-/* BADGES */
 .tech-badge {
   background-color: rgba(234, 228, 221, 0.06);
   color: #9E948F;
@@ -170,7 +168,6 @@ p {
   border-style: dashed !important;
 }
 
-/* BOTÓN DESHABILITADO */
 .btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -190,7 +187,6 @@ p {
   visibility: hidden;
 }
 
-/* FORZAR ALTURAS IGUALES Y FLEXBOX EN GRID */
 #projects .row {
   display: flex;
   flex-wrap: wrap;
