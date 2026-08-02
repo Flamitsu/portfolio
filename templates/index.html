@@ -32,20 +32,101 @@
                     <span class="text-end">
                         <a href="https://rust-lang.org/" target="_blank" rel="noopener noreferrer" class="tech-link">Rust</a>, 
                         <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" rel="noopener noreferrer" class="tech-link">C</a>,
-                        <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" class="tech-link">Python</a>
+                        <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" class="tech-link">Python</a>,
                         <a href="https://www.java.com/" target="_blank" rel="noopener noreferrer" class="tech-link">Java</a>, 
                         <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" rel="noopener noreferrer" class="tech-link">SQL</a>
                     </span>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
-<section id="projects" class="infocard rounded-4 p-4 p-md-5 my-4">
-    <div></div>
-    <div></div>
-    <div></div>
+
+<section id="projects" class="my-5">
+    <h2 class="fw-bold mb-4 fs-3">FEAT. PROJECTS</h2>
+    
+    <div class="row g-4">
+        <div class="col-12 col-lg-4">
+            <article class="infocard rounded-4 p-4 h-100 d-flex flex-column justify-content-between border-accent">
+                <div>
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h3 class="fs-4 fw-bold mb-0">Ignix</h3>
+                        <span class="tech-badge">Alpha / WIP</span>
+                    </div>
+                    
+                    <div class="project-media mb-3 d-flex align-items-center justify-content-center rounded-3 p-3">
+                        <img src="{{ get_url(path="images/bootloader-logo.svg") }}" alt="Ignix Logo" class="img-fluid project-logo">
+                    </div>
+                    
+                    <p class="text-secondary small mb-3">
+                        Zero-dependency UEFI bootloader featuring a minimal microkernel core, Ed25519 module verification, custom IPC via UEFI protocols, and an isolated SDK for modular drivers.
+                    </p>
+                </div>
+                
+                <div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="tech-badge">Rust (no_std)</span>
+                        <span class="tech-badge">UEFI</span>
+                        <span class="tech-badge">Microkernel</span>
+                        <span class="tech-badge">Ed25519</span>
+                        <span class="tech-badge">IPC</span>
+                    </div>
+                    <a href="https://github.com/Flamitsu/ignix" target="_blank" rel="noopener noreferrer" class="btn btn-cta w-100 fs-7">Source Code</a>
+                </div>
+            </article>
+        </div>
+        <div class="col-12 col-lg-4">
+            <article class="infocard rounded-4 p-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h3 class="fs-4 fw-bold mb-0">Linux firmware debloater</h3>
+                        <span class="tech-badge">1.0.0</span>
+                    </div>
+                    <div class="project-media project-media-fallback mb-3 d-flex align-items-center justify-content-center rounded-3">
+                        <span class="font-monospace fs-5 text-accent fw-bold">&gt;_ sys-kernel/linux-firmware</span>
+                    </div>
+                    <p class="text-secondary small mb-3">
+                        C tooling designed for Gentoo to strip unused firmware blobs by using Portage's savedconfig feature.
+                    </p>
+                </div>
+                
+                <div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="tech-badge">C</span>
+                        <span class="tech-badge">Gentoo</span>
+                        <span class="tech-badge">Portage</span>
+                    </div>
+                    <a href="https://github.com/Flamitsu/debloat-firmware" target="_blank" rel="noopener noreferrer" class="btn btn-secondary w-100 fs-7">Source Code</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <article class="infocard rounded-4 p-4 h-100 d-flex flex-column justify-content-between project-coming-soon">
+                <div>
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h3 class="fs-4 fw-bold mb-0">Mossix</h3>
+                        <span class="badge bg-warning text-dark font-monospace fs-8">WIP</span>
+                    </div>
+                    
+                    <div class="project-media mb-3 d-flex align-items-center justify-content-center rounded-3 p-3">
+                        <span class="fs-5 text-secondary">Coming Soon...</span>
+                    </div>
+                    
+                    <p class="text-secondary small mb-3">
+                        Currently under active research & development.
+                    </p>
+                </div>
+                
+                <div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="tech-badge">Who knows?</span>
+                    </div>
+                    <button class="btn btn-secondary w-100 fs-7" disabled>Coming Soon...</button>
+                </div>
+            </article>
+        </div>
+    </div>
 </section>
 <section id="stack"></section>
 <section id="contact"></section>

@@ -83,9 +83,11 @@ a {
   transform: translateY(0);
   box-shadow: 0 2px 8px rgba(217, 65, 30, 0.2);
 }
+
 p {
   color: #FFFFFF;
 }
+
 .infocard {
   background-color: #242121;
   border: 1px solid rgba(234, 228, 221, 0.08);
@@ -124,6 +126,86 @@ p {
 
 .text-secondary {
   color: #9E948F !important;
+}
+
+/* MEDIAS DE PROYECTOS (CONTENEDORES Y ALTURA UNIFORME) */
+.project-media {
+  background-color: rgba(24, 22, 22, 0.6);
+  height: 150px;
+  min-height: 150px;
+  max-height: 150px;
+  border: 1px solid rgba(234, 228, 221, 0.05);
+  overflow: hidden;
+}
+
+.project-logo {
+  max-height: 90px;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-media-fallback {
+  border-left: 3px solid #D9411E;
+}
+
+.text-accent {
+  color: #D9411E;
+}
+
+/* BADGES */
+.tech-badge {
+  background-color: rgba(234, 228, 221, 0.06);
+  color: #9E948F;
+  border: 1px solid rgba(234, 228, 221, 0.1);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.375rem;
+  font-family: monospace;
+}
+
+.project-coming-soon {
+  opacity: 0.75;
+  border-style: dashed !important;
+}
+
+/* BOTÓN DESHABILITADO */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+.border-accent {
+  border-color: rgba(217, 65, 30, 0.4) !important;
+  box-shadow: 0 10px 25px rgba(217, 65, 30, 0.12);
+}
+
+.fs-8 {
+  font-size: 0.7rem;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+/* FORZAR ALTURAS IGUALES Y FLEXBOX EN GRID */
+#projects .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#projects .row > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects .infocard {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*!
