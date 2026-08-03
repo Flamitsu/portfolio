@@ -2,132 +2,155 @@
 
 {% block title %}Flamitsu's portfolio{% endblock title %}
 {% block content %}
-<section id="about-me" class="infocard rounded-4 p-4 p-md-5 my-4">
+<section id="about-me" class="infocard p-4 p-md-5 my-4">
     <div class="row align-items-center g-4">
         <div class="col-12 col-md-4 d-flex justify-content-center">
-            <img src="{{ get_url(path="img/logo.svg") }}" alt="Flamitsu's profile picture" class="img-fluid pfp-logo">
+            <img src="{{ get_url(path="img/logo.svg") }}" alt="Flamitsu's profile picture" class="pfp-logo">
         </div>
-        <div class="col-12 col-md-5">
-            <h1 class="fw-bold mb-2">Low level developer</h1>
-            <p class="lead mb-0">I focus on binary efficiency, memory safety, and low-level internals from the bootloader up.</p>
-        </div>
-        <div class="col-12 col-md-3">
-            <div class="d-flex flex-column gap-2 tech-spec-box"> 
-                <div class="d-flex justify-content-between border-bottom pb-2">
-                    <span class="text-secondary fw-semibold">OS:</span>
-                    <span class="text-end">
-                        <a href="https://www.gentoo.org/get-started/about/" target="_blank" rel="noopener noreferrer" class="tech-link">Gentoo</a> 
-                        (<a href="https://wiki.gentoo.org/wiki/Project:Musl" target="_blank" rel="noopener noreferrer" class="tech-link">musl</a> / 
-                        <a href="https://wiki.gentoo.org/wiki/Project:LLVM" target="_blank" rel="noopener noreferrer" class="tech-link">LLVM</a>)
-                    </span>
-                </div>
-                <div class="d-flex justify-content-between border-bottom pb-2">
-                    <span class="text-secondary fw-semibold">Tooling:</span>
-                    <span class="text-end">
-                        <a href="https://llvm.org/" target="_blank" rel="noopener noreferrer" class="tech-link">LLVM</a>
-                    </span>
-                </div>
-                <div class="d-flex justify-content-between border-bottom pb-2">
-                    <span class="text-secondary fw-semibold">Languages:</span>
-                    <span class="text-end">
-                        <a href="https://rust-lang.org/" target="_blank" rel="noopener noreferrer" class="tech-link">Rust</a>, 
-                        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" rel="noopener noreferrer" class="tech-link">C</a>,
-                        <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" class="tech-link">Python</a>,
-                        <a href="https://www.java.com/" target="_blank" rel="noopener noreferrer" class="tech-link">Java</a>, 
-                        <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" rel="noopener noreferrer" class="tech-link">SQL</a>
-                    </span>
-                </div>
-            </div>
+        <div class="col-12 col-md-8">
+            <h1 class="mb-2">Systems & Low level dev</h1>
+            <p class="mb-2">I focus on binary efficiency, memory safety, and low-level internals from the bootloader up.</p>
+            <p class="mb-0">
+                Passionate hardware enthusiast turned self-taught systems & low level developer, currently completing Higher Vocational Training (graduating June 2027).
+            </p>
         </div>
     </div>
 </section>
-
 <section id="projects" class="my-5">
-    <h2 class="fw-bold mb-4 fs-3">PROJECTS</h2>
-    
+    <h2 class="mb-4">FEATURED PROJECTS</h2>
     <div class="row g-4">
         <div class="col-12 col-lg-4">
-            <article class="infocard rounded-4 p-4 h-100 d-flex flex-column justify-content-between border-accent">
+            <article class="infocard p-4 d-flex flex-column justify-content-between border-accent">
                 <div>
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h3 class="fs-4 fw-bold mb-0">Ignix</h3>
-                        <span class="tech-badge">Alpha / WIP</span>
+                        <h3 class="mb-0">Ignix</h3>
+                        <span class="version-badge bold">Alpha</span>
                     </div>
                     
-                    <div class="project-media mb-3 d-flex align-items-center justify-content-center rounded-3 p-3">
-                        <img src="{{ get_url(path="images/bootloader-logo.svg") }}" alt="Ignix Logo" class="img-fluid project-logo">
+                    <div class="project-media mb-3 d-flex align-items-center justify-content-center p-3">
+                        <img src="{{ get_url(path="img/ignix.svg") }}" alt="Ignix Logo" class="img-fluid project-logo">
                     </div>
-                    
-                    <p class="text-secondary small mb-3">
-                        Zero-dependency UEFI bootloader featuring a minimal microkernel core, Ed25519 module verification, custom IPC via UEFI protocols, and an isolated SDK for modular drivers.
+                    <p class="text-secondary mb-3">
+                        Zero-dependency UEFI boot manager featuring a minimal microkernel core, Ed25519 custom secure boot, custom IPC via UEFI protocols, and an isolated SDK for custom modules / official modules.
                     </p>
                 </div>
-                
                 <div>
-                    <div class="d-flex flex-wrap gap-2 mb-3">
+                    <div class="d-flex flex-wrap mb-3">
                         <span class="tech-badge">Rust (no_std)</span>
                         <span class="tech-badge">UEFI</span>
                         <span class="tech-badge">Microkernel</span>
                         <span class="tech-badge">Ed25519</span>
                         <span class="tech-badge">IPC</span>
                     </div>
-                    <a href="https://github.com/Flamitsu/ignix" target="_blank" rel="noopener noreferrer" class="btn btn-cta w-100 fs-7">Source Code</a>
+                    <a href="https://github.com/Flamitsu/ignix" target="_blank" rel="noopener noreferrer" class="btn btn-cta">Source Code</a>
                 </div>
             </article>
         </div>
         <div class="col-12 col-lg-4">
-            <article class="infocard rounded-4 p-4 h-100 d-flex flex-column justify-content-between">
+            <article class="infocard p-4 d-flex flex-column justify-content-between">
                 <div>
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h3 class="fs-4 fw-bold mb-0">Linux firmware debloater</h3>
-                        <span class="tech-badge">1.0.0</span>
+                        <h3 class="mb-0">Linux firmware debloater</h3>
+                        <span class="version-badge bold">1.0.0</span>
                     </div>
-                    <div class="project-media project-media-fallback mb-3 d-flex align-items-center justify-content-center rounded-3">
-                        <span class="font-monospace fs-5 text-accent fw-bold">&gt;_ sys-kernel/linux-firmware</span>
+                    <div class="project-media project-media-fallback mb-3 d-flex align-items-center justify-content-center">
+                    <span class="text-accent">>_ sys-kernel/linux-firmware</span>
                     </div>
-                    <p class="text-secondary small mb-3">
+                    <p class="text-secondary mb-3">
                         C tooling designed for Gentoo to strip unused firmware blobs by using Portage's savedconfig feature.
                     </p>
-                </div>
-                
+                </div>  
                 <div>
-                    <div class="d-flex flex-wrap gap-2 mb-3">
+                    <div class="d-flex flex-wrap mb-3">
                         <span class="tech-badge">C</span>
                         <span class="tech-badge">Gentoo</span>
                         <span class="tech-badge">Portage</span>
                     </div>
-                    <a href="https://github.com/Flamitsu/debloat-firmware" target="_blank" rel="noopener noreferrer" class="btn btn-secondary w-100 fs-7">Source Code</a>
+                    <a href="https://github.com/Flamitsu/debloat-firmware" target="_blank" rel="noopener noreferrer" class="btn btn-secondary w-100">Source Code</a>
                 </div>
             </article>
         </div>
-
         <div class="col-12 col-lg-4">
-            <article class="infocard rounded-4 p-4 h-100 d-flex flex-column justify-content-between project-coming-soon">
+            <article class="infocard p-4 d-flex flex-column justify-content-between project-coming-soon">
                 <div>
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h3 class="fs-4 fw-bold mb-0">Mossix</h3>
-                        <span class="badge bg-warning text-dark font-monospace fs-8">WIP</span>
+                        <h3 class="mb-0">Currently in R&D</h3>
+                        <span class="version-badge bold">WIP</span>
                     </div>
-                    
-                    <div class="project-media mb-3 d-flex align-items-center justify-content-center rounded-3 p-3">
-                        <span class="fs-5 text-secondary">Coming Soon...</span>
+                    <div class="project-media mb-3 d-flex align-items-center justify-content-center">
+                        <img src="{{ get_url(path="img/wip_placeholder.webp") }}" alt="Coming soon" class="project-img-cover">
                     </div>
-                    
-                    <p class="text-secondary small mb-3">
-                        Currently under active research & development.
+                    <p class="text-secondary mb-3">
+                        Higher Vocational Training Final Project. 
+                        I can't publish it until June 2027
                     </p>
-                </div>
-                
+                </div>        
                 <div>
                     <div class="d-flex flex-wrap gap-2 mb-3">
-                        <span class="tech-badge">Who knows?</span>
+                        <!--<span class="tech-badge"></span>-->
                     </div>
-                    <button class="btn btn-secondary w-100 fs-7" disabled>Coming Soon...</button>
+                    <button class="btn btn-secondary w-100" disabled>Source Code</button>
                 </div>
             </article>
         </div>
     </div>
 </section>
-<section id="stack"></section>
-<section id="contact"></section>
+<section id="stack" class="my-5">
+    <h2 class="mb-4">STACK</h2>
+    <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="infocard p-4 h-100">
+                <h3 class="text-accent mb-3">Systems & Arch</h3>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="stack-badge">Rust (no_std, std)</span>
+                    <span class="stack-badge">C23</span>
+                    <span class="stack-badge">UEFI</span>
+                    <span class="stack-badge">RISC-V</span>
+                    <span class="stack-badge">x86_64</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="infocard p-4 h-100">
+                <h3 class="text-accent mb-3">Toolchain & Debug</h3>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="stack-badge">LLVM</span>
+                    <span class="stack-badge">clang</span>
+                    <span class="stack-badge">lld</span>
+                    <span class="stack-badge">lldb</span>
+                    <span class="stack-badge">QEMU</span>
+                    <span class="stack-badge">strace</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="infocard p-4 h-100">
+                <h3 class="text-accent mb-3">Higher Level</h3>
+                <div class="d-flex flex-wrap">
+                    <span class="stack-badge">Python</span>
+                    <span class="stack-badge">Java</span>
+                    <span class="stack-badge">Git</span>
+                    <span class="stack-badge">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="my-5">
+    <h2 class="mb-3 text-center w-100">CONTACT</h2>
+    <div class="infocard p-4 p-md-5 text-center align-items-center">
+        
+        <p class="text-secondary mb-4 col-12 col-md-8 mx-auto">
+            Open for collaborations, systems-related discussions, or low-level engineering roles.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="mailto:flamitsu@proton.me" class="btn btn-cta">
+                Send Email
+            </a>
+            <a href="https://github.com/Flamitsu" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                GitHub
+            </a>
+        </div>
+    </div>
+</section>
 {% endblock content %}

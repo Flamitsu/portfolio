@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-    <link rel="stylesheet" href="{{ get_url(path="styles.css") }}">
+    <link rel="icon" href="{{ get_url(path="img/logo32.png") }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ get_url(path="css/styles.css") }}">
 </head>
 <body>
     <header class="p-4">
-    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-        <a href="/" class="text-center text-md-start fw-bold fs-4">FLAMITSU</a>
-        <nav class="d-flex flex-column flex-md-row align-items-center gap-2 gap-md-3 py-1">
-            <a href="#about-me" class="btn btn-secondary">ABOUT ME</a>
-            <a href="#projects" class="btn btn-secondary">PROJECTS</a>
-            <a href="#stack" class="btn btn-secondary">STACK</a>
-            <a href="#contact" class="btn btn-cta">CONTACT</a>
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <a href="/">FLAMITSU</a>
+        <nav class="d-flex flex-column flex-md-row align-items-center py-1">
+            <a href="#about-me" class="btn btn-secondary m-md-1">ABOUT ME</a>
+            <a href="#projects" class="btn btn-secondary m-md-1">PROJECTS</a>
+            <a href="#stack" class="btn btn-secondary m-md-1">STACK</a>
+            <a href="#contact" class="btn btn-cta m-md-1">CONTACT</a>
         </nav>   
     </div>
 </header>

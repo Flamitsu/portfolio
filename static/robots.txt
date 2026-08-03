@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://flamitsu.com/sitemap.xml
