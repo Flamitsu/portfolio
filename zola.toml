@@ -1,7 +1,7 @@
 # The URL the site will be built for
 title = "Flamitsu"
 base_url = "https://flamitsu.com"
-
+#generate_robots_txt = false
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
