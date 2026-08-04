@@ -5,7 +5,7 @@
 <section id="about-me" class="infocard p-4 p-md-5 my-4">
     <div class="row align-items-center g-4">
         <div class="col-12 col-md-4 d-flex justify-content-center">
-            <img src="{{ get_url(path="img/logo.svg") }}" alt="Flamitsu's profile picture" class="pfp-logo">
+            <img src="{{ get_url(path="img/logo.svg") }}" fetchpriority=high alt="Flamitsu's profile picture" width="128px" height="128px" class="pfp-logo">
         </div>
         <div class="col-12 col-md-8">
             <h1 class="mb-2">Systems & Low level dev</h1>
@@ -26,17 +26,17 @@
                         <h3 class="mb-0">Ignix</h3>
                         <span class="version-badge bold">Alpha</span>
                     </div>
-                    
                     <div class="project-media mb-3 d-flex align-items-center justify-content-center p-3">
-                        <img src="{{ get_url(path="img/ignix.svg") }}" alt="Ignix Logo" class="img-fluid project-logo">
+                        <img src="{{ get_url(path="img/wip_placeholder.webp") }}" alt="Ignix Logo" height="150" width="139" class="img-fluid project-logo">
                     </div>
                     <p class="text-secondary mb-3">
-                        Zero-dependency UEFI boot manager featuring a minimal microkernel core, Ed25519 custom secure boot, custom IPC via UEFI protocols, and an isolated SDK for custom modules / official modules.
+                        Zero-dependency UEFI boot manager featuring a minimal microkernel core (no_std), a userland CLI tool (std), Ed25519 custom secure boot, custom IPC via UEFI protocols, and an isolated SDK.
                     </p>
                 </div>
                 <div>
                     <div class="d-flex flex-wrap mb-3">
-                        <span class="tech-badge">Rust (no_std)</span>
+                        <span class="tech-badge">Rust (no_std / std)</span>
+                        <span class="tech-badge">0 dependencies</span>
                         <span class="tech-badge">UEFI</span>
                         <span class="tech-badge">Microkernel</span>
                         <span class="tech-badge">Ed25519</span>
@@ -58,6 +58,9 @@
                     </div>
                     <p class="text-secondary mb-3">
                         C tooling designed for Gentoo to strip unused firmware blobs by using Portage's savedconfig feature.
+                    </p>
+                    <p class="text-secondary mb-3">
+                        It is disagned to use the minimum practical syscalls and can free up to ~2GB of binary blobs that you don't use
                     </p>
                 </div>  
                 <div>

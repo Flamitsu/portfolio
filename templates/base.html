@@ -9,18 +9,32 @@
     <link rel="stylesheet" href="{{ get_url(path="css/styles.css") }}">
 </head>
 <body>
-    <header class="p-4">
-    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
-        <a href="/">FLAMITSU</a>
-        <nav class="d-flex flex-column flex-md-row align-items-center py-1">
-            <a href="#about-me" class="btn btn-secondary m-md-1">ABOUT ME</a>
-            <a href="#projects" class="btn btn-secondary m-md-1">PROJECTS</a>
-            <a href="#stack" class="btn btn-secondary m-md-1">STACK</a>
-            <a href="#contact" class="btn btn-cta m-md-1">CONTACT</a>
-        </nav>   
-    </div>
-</header>
-    <main class="p-4">
+    <header class="p-3">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between header-rel">
+            
+            <!-- Checkbox fuera para que sea hermano de .nav-wrapper -->
+            <input type="checkbox" id="menu-toggle" class="d-none">
+
+            <div class="d-flex justify-content-between align-items-center full-width-mobile">
+                <a href="/">FLAMITSU</a>
+                <label for="menu-toggle" class="menu-btn d-md-none" aria-label="Abrir menú">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                        <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                    </svg>
+                </label>
+            </div>
+
+            <div class="nav-wrapper">
+                <nav class="d-flex flex-column flex-md-row align-items-center py-1">
+                    <a class="btn btn-secondary m-md-1 full-width-mobile my-1 my-md-0" href="#about-me">ABOUT ME</a>
+                    <a class="btn btn-secondary m-md-1 full-width-mobile my-1 my-md-0" href="#projects">PROJECTS</a>
+                    <a class="btn btn-secondary m-md-1 full-width-mobile my-1 my-md-0" href="#stack">STACK</a>
+                    <a class="btn btn-cta m-md-1 full-width-mobile my-1 my-md-0" href="#contact">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="p-5">
         {% block content %}
         {% endblock content %}
     </main>
