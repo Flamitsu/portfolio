@@ -6,6 +6,8 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
 }
 html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   scroll-behavior: smooth;
 }
 /*This is so the sticky header don't cover H2 in sections like for example 'FEATURED PROJECTS' in index.html*/
